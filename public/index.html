@@ -69,11 +69,49 @@
         </p>
       </div>
     </section>
+
     <!-- Project Cards -->
     <section class="p-5 bg-light" id="projects">
       <div class="container">
         <h2 class="text-center mb-4">Projects</h2>
         <div class="row">
+          <!-- MicroFrame Project Card -->
+          <article class="col-md-6">
+            <div class="card">
+              <!-- Image -->
+              <div
+                class="project-image"
+                style="background-image: url('images/MF_Simple.png')"
+              ></div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4>MicroFrame</h4>
+                <!-- Project Subtext -->
+                <p>
+                  Lightweight Data Manipulation Library | Educational Tool |
+                  PyPI Package
+                </p>
+                <!-- Card Text -->
+                <p>
+                  MicroFrame is a lightweight library offering a pandas-like
+                  interface for educational data manipulation. It's optimized
+                  for toy datasets, introducing students to data analysis with
+                  minimal overhead.
+                </p>
+                <!-- Button to trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#microFrameModal"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </article>
+
           <!-- Exploring Audio Diffusion Synthesis Card -->
           <article class="col-md-6">
             <div class="card">
@@ -298,6 +336,157 @@
         </div>
       </div>
     </section>
+    <!-- Modal for MicroFrame -->
+    <div
+      class="modal fade"
+      id="microFrameModal"
+      tabindex="-1"
+      aria-labelledby="microFrameModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- Title -->
+            <h5 class="modal-title" id="microFrameModalLabel">
+              MicroFrame Data Library
+            </h5>
+            <!-- Exit Button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Overview Section -->
+            <h5>Overview</h5>
+            <p>
+              MicroFrame is a lightweight educational library emulating a
+              pandas-like interface for data manipulation, designed for students
+              and beginners in data analysis.
+            </p>
+            <!-- Key Features Section -->
+            <h5>Key Features</h5>
+            <ul>
+              <li>
+                <strong>Efficient CSV Reading:</strong> Rapidly reads CSV files
+                to create MicroFrame objects, tailored for smaller datasets.
+              </li>
+              <li>
+                <strong>Data Type Handling:</strong> Offers advanced data type
+                inference and explicit setting for better data structure
+                control.
+              </li>
+              <li>
+                <strong>Flexible MicroFrame Objects:</strong> Similar in
+                function to pandas DataFrames, enabling intuitive data
+                manipulation and analysis.
+              </li>
+              <li>
+                <strong>Clear Tabular Display:</strong> Enhanced printing
+                capabilities for well-formatted data presentation.
+              </li>
+              <li>
+                <strong>Robust Data Manipulation:</strong> Includes filtering,
+                column type modification, and data summarization, akin to
+                pandas.
+              </li>
+              <li>
+                <strong>Advanced Indexing:</strong> Efficient data access via
+                advanced indexing methods, including an 'iloc' method.
+              </li>
+              <li>
+                <strong>Data Conversion Tools:</strong> Easy conversion to
+                formats like NumPy arrays using the 'to_numpy' method.
+              </li>
+              <li>
+                <strong>User-Friendly API:</strong> Mirrors pandas API to
+                facilitate an easier transition to real-world data analysis
+                projects.
+              </li>
+            </ul>
+            <!-- Technology Used Section -->
+            <h5>Technology Used</h5>
+            <ul>
+              <li>
+                <strong>Numpy:</strong> Fundamental to MicroFrame's backend,
+                providing efficient data structures and performance
+                optimization.
+              </li>
+              <li>
+                <strong>PyTest:</strong> Key tool for testing the functionality
+                and reliability of MicroFrame.
+              </li>
+              <li>
+                <strong>PyTest.Cov:</strong> Used to generate comprehensive code
+                coverage reports, ensuring robustness across the library.
+              </li>
+              <li>
+                <strong>Hypothesis:</strong> Enables thorough property-based
+                testing by generating a wide range of test cases.
+              </li>
+              <li>
+                <strong>Black:</strong> Ensures code consistency and adherence
+                to style standards.
+              </li>
+              <li>
+                <strong>Sphinx:</strong> Transforms code comments into detailed
+                documentation, facilitating easier understanding and use of the
+                library.
+              </li>
+              <li>
+                <strong>Hatch:</strong> Aids in the efficient packaging and
+                distribution of MicroFrame, streamlining deployment processes.
+              </li>
+              <li>
+                <strong>GitHub:</strong> Central hub for source code management,
+                version control, and collaboration.
+              </li>
+              <li>
+                <strong>GitHub Pages:</strong> Hosts the comprehensive
+                documentation for easy access and reference.
+              </li>
+              <li>
+                <strong>GitHub Actions:</strong> Automates continuous
+                integration and continuous deployment, enhancing workflow
+                efficiency.
+              </li>
+            </ul>
+            <!-- Links -->
+            <h5>Explore Further</h5>
+            <ul>
+              <!-- GitHub Link -->
+              <li>
+                <strong>GitHub Repository:</strong>
+                <a
+                  href="https://github.com/cmsolson75/MicroFrame/tree/main"
+                  target="_blank"
+                  >MicroFrame</a
+                >
+              </li>
+              <!-- Documentation Link -->
+              <li>
+                <strong>Documentation:</strong>
+                <a
+                  href="https://cmsolson75.github.io/MicroFrame/"
+                  target="_blank"
+                  >MicroFrame Documentation</a
+                >
+              </li>
+              <!-- PyPI Command -->
+              <li><strong>PyPI:</strong> <a 
+                href="https://pypi.org/project/microframe/"
+                target="_blank">PyPI Project</a></li>
+            </ul>
+          </div>
+          <!-- Footer for line at bottom -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal for Exploring Audio Diffusion Synthesis -->
     <div
